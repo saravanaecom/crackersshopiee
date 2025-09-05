@@ -1,0 +1,45 @@
+import React, { lazy, Suspense } from 'react';
+import BannerSlider from "../components/slider/BannerSlider";
+import ImageCategorySlider from "../components/slider/ImageCategorySlider";
+import OfferFastMovingProduct from "../components/slider/offerFastMovingProduct";
+import ProductByIndexPage from '../components/slider/productByIndexPage';
+import { Container } from '@mui/material';
+import WhyChooseUs from "../components/Home/WhyChooseUs";
+import ProductCategories from "../components/Home/ProductCategories";
+import HeroSection from "../components/Home/HeroSection";
+import BrandSlider from "../components/Home/BrandSlider";
+import AboutUsSection from "../components/Home/AboutUsSection";
+import slideparallax from '../assets/slideparallax.jpg';
+import { Box } from "@mui/material";
+import CrackerShowcaseCards from '../components/CrackerShowcaseCards';
+import FloatingOffer from '../components/FloatingOffer';
+import LegalNoticePopup from '../components/LegalNoticePopup ';
+
+const CreackersEffect = lazy(() => import('../components/CreackersEffect'));
+export default function HomePage() {
+    return (
+        <>
+            <Container maxWidth="xl">
+                
+            </Container>
+            <BannerSlider />
+                {/* <OfferFastMovingProduct/>            
+                <ImageCategorySlider />*/}
+                {/* <ProductByIndexPage/>                  */}
+              
+              <  CrackerShowcaseCards/>
+                <ProductCategories/>
+
+                <ImageCategorySlider />
+               
+                <OfferFastMovingProduct/>
+                <BrandSlider />
+                <HeroSection />
+                <Suspense fallback={null}>
+                    <CreackersEffect/>
+                </Suspense> 
+                <FloatingOffer/>
+                <LegalNoticePopup /> 
+        </>
+    )
+};
