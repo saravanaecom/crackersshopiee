@@ -332,6 +332,7 @@ export default function ProductCheckout() {
                 NewCustomerStatus: 0,
                 CouponDiscount: 0.0,
                 CouponRefId:couponId,
+                SaleOrderDisplay:'Second branch',
                 OrderCount: 1,
                 ReferalAmount: 0.0,                
                 disper:Number(couponDiscount),
