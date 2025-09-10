@@ -32,7 +32,7 @@ export default function HomePage() {
 
                 <ImageCategorySlider />
                
-                <OfferFastMovingProduct/>
+       
                 <BrandSlider />
                 <HeroSection />
                 <Suspense fallback={null}>
